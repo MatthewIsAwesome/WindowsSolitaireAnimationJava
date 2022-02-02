@@ -115,6 +115,8 @@ public class Card {
         if (velocity.x == 0) {
             velocity.x = 0.5;
         }
+
+        // this.texture = getRandomImage(); 
     }
 
     public void applyForce(Point2D.Double force) {

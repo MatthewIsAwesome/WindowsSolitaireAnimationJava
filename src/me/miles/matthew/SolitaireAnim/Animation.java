@@ -83,7 +83,7 @@ public class Animation extends JPanel implements ActionListener {
             if (new Random().nextInt(100) < Math.log(1 + timeSinceStartMillis/1000d)) {
                 Card card = new Card(new Random().nextInt(getWidth()), new Random().nextInt(getHeight()), new Dimension(140, 202), 0.8);
                 cards.add(card);
-                card.applyForce(new Point2D.Double(0, 100));
+                card.applyForce(new Point2D.Double(0, /*new Random().nextInt(400) - 200*/ 0*100));
                 card.addVelocity(new Point2D.Double(new Random().nextInt(200)-100, new Random().nextInt(200)-100));
             }
 
